@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthProvider } from "../../Context/AuthProvider";
-import axios from "axios";
 import toast from "react-hot-toast";
 
 

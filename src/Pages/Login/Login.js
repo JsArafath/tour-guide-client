@@ -50,7 +50,7 @@ const Login = () => {
             const currentUser = {
                 email: user.email,
             }
-            fetch('https://ass11-server.vercel.app/jwt', {
+            fetch('https://tour-guide-server-jsarafath.vercel.app/jwt', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -72,7 +72,7 @@ const Login = () => {
             const currentUser = {
                 email: user.email,
             }
-            fetch('https://ass11-server.vercel.app/jwt', {
+            fetch('https://tour-guide-server-jsarafath.vercel.app/jwt', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
