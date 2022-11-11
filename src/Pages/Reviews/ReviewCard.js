@@ -15,7 +15,7 @@ const ReviewCard = ({ review, refresh, setRefresh }) => {
 
 
     useEffect(() => {
-        fetch(`https://tour-guide-server-gamma.vercel.app/services/${review?.serviceId}`)
+        fetch(`https://tour-guide-server-jsarafath.vercel.app/services/${review?.serviceId}`)
             .then(res => res.json())
             .then(data => {
                 setService(data)
@@ -33,7 +33,7 @@ const ReviewCard = ({ review, refresh, setRefresh }) => {
         if(!agree){
             return;
         }
-        fetch(`https://tour-guide-server-gamma.vercel.app/reviews/${review?._id}`, {
+        fetch(`https://tour-guide-server-jsarafath.vercel.app/reviews/${review?._id}`, {
             method: 'DELETE'
         })
             .then(res => {
