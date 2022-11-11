@@ -10,7 +10,7 @@ const MyReviews = () => {
     const [refresh, setRefresh] = useState(false);
 
     useEffect(() => {
-        fetch(`https://tour-guide-server-gamma.vercel.app/review?reviewerEmail=${user?.email}`, {
+        fetch(`https://tour-guide-server-jsarafath.vercel.app/review?reviewerEmail=${user?.email}`, {
             headers: {
                 "authorization" : `Bearer ${localStorage.getItem('guide23-token')}`
             }
