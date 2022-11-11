@@ -24,7 +24,7 @@ const AddService = () => {
             review,
             discription
         }
-        fetch('http://localhost:5002/services', {
+        fetch('https://tour-guide-server-jsarafath.vercel.app/services', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

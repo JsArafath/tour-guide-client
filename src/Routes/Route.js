@@ -10,6 +10,7 @@ import Register from "../Pages/Register/Register";
 import ServiceDetails from "../Pages/Services/ServiceDetails";
 import Services from "../Pages/Services/Services";
 import PrivateRoute from "./PrivateRoute";
+import SendReview from "../Pages/Reviews/SendReview"
 
 
 

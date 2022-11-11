@@ -23,8 +23,14 @@ const ServiceDetails = () => {
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
+        const displayname = form.displayname.value;
+          const reviewDate = new Date().toDateString();
+        const reviewTime = new Date().toLocaleTimeString();
         const serviceData = {
             name,
+            displayname,
+            reviewDate,
+            reviewTime,
         }
         fetch('https://tour-guide-server-jsarafath.vercel.app/review', {
             method: 'POST',
@@ -96,35 +102,54 @@ const ServiceDetails = () => {
            <form onSubmit={handleAddService} className="w-11/12 md:w-9/12 mx-auto">
                         <div className="my-5">
                             <label htmlFor="name" className="block  text-accent  font-bold mb-2">Service Name</label>
-                            <input type="text" name="name" id="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Service Name" required />
-                        </div>
-                        <div className="my-5">
+                            {
+                                  user ? <div>
+                                  <input type="text" name="displayname" id="displayname" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Your Name" required  />
+
+                            <input type="text" name="name" id="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Review" required />
+
+                            <div className="my-5">
                             <button className="px-3 py-2 bg-gray-400 text-white rounded-xl">Add Review</button>
+                            </div>
+                                  </div>
+                                  :
+                                  <div>
+                                    Please login to add a review......
+                                    <Link to="/login">
+                                    <button className="px-3 py-2 bg-gray-400 text-white rounded-xl">Login</button>
+                                    </Link>
+                                  </div>
+
+                                  
+                            }
+                            
                         </div>
+                        
                     </form>
 <h1 className='text-lg font-bold text-secondary mt-5'>All Reviews:</h1>
 
 
 
-<div className="card w-96 bg-base-100 shadow-xl">
+<div className="card w-96 bg-base-200 shadow-xl">
       {
                 reviews.map((tool, index) => (
-                     <div className="card-body">
-    <div className="grid lg:grid-cols-2 sm:gri-cols-1">
-<h2 className="text-blue-500 font-bold text-sm">{user.displayName}</h2>
-    <p>{tool.name}</p>
-    </div>
+                    <div className="card-body">
+                      <div className="grid lg:grid-cols-2 sm:gri-cols-1">
+                          <h1 className="text-blue-500 font-bold text-sm">{tool.displayname}</h1>
+                          <small className="text-green-500">{tool.reviewDate}</small>
+                          <p className="">{tool.name}</p>
+                      </div>
     
-    <div className="card-actions justify-end">
+                      <div className="card-actions justify-end">
       
-    </div>
-  </div>
+                      </div>
+                    </div>
                 ))
-                        
-                 
               }
  
 </div>
+
+
 
 
           </div>

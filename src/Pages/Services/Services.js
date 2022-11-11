@@ -30,7 +30,7 @@ const Services = () => {
             {loading ? <h1 className="flex text-xl font-bold justify-center items-center h-screen"> Loading... </h1> : <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
                     services.map((service, index) => <div key={index} className="border border-gray-400 rounded-lg">
-                        <div className="block rounded-lg p-4 shadow-lg shadow-indigo-100">
+                        <div className="block rounded-lg p-4 ">
                             <PhotoProvider>
                                 <div className="foo">
                                     <PhotoView key={index} src={service.img}>
