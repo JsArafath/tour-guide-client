@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className="w-full">
       <header aria-label="Site Header" className="bg-primary">
         <div className="mx-auto max-w-screen-xl ">
-          <div className="flex bg-gray-100 h-16 items-center justify-between pr-10">
+          <div className="flex bg-gray-900 h-16 items-center justify-between pr-10">
             <div className="dropdown">
               <label tabIndex={0} className="btn  lg:hidden">
                 <svg
@@ -35,7 +35,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-compact dropdown-content mt-3 p-2 shadow text-gray-700 rounded-box w-52"
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow text-white rounded-box w-52"
               >
                 <Link to="/">
                   <li>Home</li>
@@ -68,10 +68,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="md:flex md:items-center md:gap-12">
-              <nav
-                aria-label="Site Nav"
-                className="hidden md:block text-gray-700"
-              >
+              <nav aria-label="Site Nav" className="hidden md:block text-white">
                 <ul className="flex items-center gap-6 text-sm ">
                   <li>
                     <Link className=" transition hover:text-gray-200/75" to="/">
