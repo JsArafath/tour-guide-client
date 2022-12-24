@@ -20,7 +20,7 @@ const HomeService = () => {
   return (
     <>
       {loading ? (
-        <h1 className="flex text-xl font-bold justify-center items-center bg-white">
+        <h1 className="flex text-xl font-bold justify-center items-center bg-gray-900">
           {" "}
           Loading...{" "}
         </h1>
@@ -28,7 +28,10 @@ const HomeService = () => {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             {services.slice(0, 3).map((service, index) => (
-              <div key={index} className="border border-black rounded-lg">
+              <div
+                key={index}
+                className="border border-black bg-gray-200 rounded-lg"
+              >
                 <div className="block rounded-lg p-4 shadow-lg ">
                   <PhotoProvider>
                     <div className="foo">
