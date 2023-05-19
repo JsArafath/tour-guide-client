@@ -49,28 +49,28 @@ const AddService = () => {
                     <h1 className="text-3xl font-bold text-center">Add Service</h1>
                     <form onSubmit={handleAddService} className="w-11/12 md:w-9/12 mx-auto">
                         <div className="my-5">
-                            <label htmlFor="name" className="block  text-accent  font-bold mb-2">Service Name</label>
-                            <input type="text" name="name" id="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Service Name" required />
+                            <label htmlFor="name" className="block  text-sky-900  font-bold mb-2">Service Name</label>
+                            <input type="text" name="name" id="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Service Name" required />
                         </div>
                         <div className="my-5">
-                            <label htmlFor="price" className="block text-accent  font-bold mb-2">Price</label>
-                            <input type="text" name="price" id="price" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Price" required />
+                            <label htmlFor="price" className="block text-sky-900  font-bold mb-2">Price</label>
+                            <input type="text" name="price" id="price" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Price" required />
                         </div>
                         <div className="my-5">
-                            <label htmlFor="rating" className="block text-accent  font-bold mb-2">Rating</label>
-                            <input type="text" name="rating" id="rating" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Rating (Out Of 5)" required />
+                            <label htmlFor="rating" className="block text-sky-900  font-bold mb-2">Rating</label>
+                            <input type="text" name="rating" id="rating" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Rating (Out Of 5)" required />
                         </div>
                         <div className="my-5">
-                            <label htmlFor="review" className="block text-accent  font-bold mb-2">Total Review</label>
-                            <input type="text" name="review" id="review" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Review (Total How Many People Review This Service)" required />
+                            <label htmlFor="review" className="block text-sky-900  font-bold mb-2">Total Review</label>
+                            <input type="text" name="review" id="review" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Review (Total How Many People Review This Service)" required />
                         </div>
                         <div className="my-5">
-                            <label htmlFor="discription" className="block text-accent font-bold mb-2">Discription</label>
-                            <textarea name="discription" id="discription" cols="30" rows="10" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Discription" required></textarea>
+                            <label htmlFor="discription" className="block text-sky-900 font-bold mb-2">Discription</label>
+                            <textarea name="discription" id="discription" cols="30" rows="10" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Discription" required></textarea>
                         </div>
                         <div className="my-5">
-                            <label htmlFor="img" className="block text-accent font-bold mb-2">Service Image URL</label>
-                            <input type="text" name="img" id="img" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" required />
+                            <label htmlFor="img" className="block text-sky-900 font-bold mb-2">Service Image URL</label>
+                            <input type="text" name="img" id="img" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" required />
                         </div>
                         <div className="my-5">
                             <button className="px-3 py-2 bg-gray-400 text-white rounded-xl">Add Service</button>

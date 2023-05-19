@@ -101,13 +101,13 @@ const ServiceDetails = () => {
             </h1>
            <form onSubmit={handleAddService} className="card w-11/12 md:w-9/12  bg-base-200 p-5 mt-6 ">
                         <div className="my-5">
-                            <label htmlFor="name" className="block  text-accent  font-bold mb-2">Service Name</label>
+                            <label htmlFor="name" className="block  text-sky-700  font-bold mb-2">Service Name</label>
                             {
                                   user ? <div>
-                                  <input type="text" name="displayname" id="displayname" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Your Name" required  />
+                                  <input type="text" name="displayname" id="displayname" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Your Name" required  />
 <br></br>
 <br></br>
-                                  <input type="text" name="name" id="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-accent leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Review" required />
+                                  <input type="text" name="name" id="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter Review" required />
 
                             <div className="my-5">
                             <button className="px-3 py-2 bg-gray-500 text-white rounded-xl">Add Review</button>
